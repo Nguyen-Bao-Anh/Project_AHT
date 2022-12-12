@@ -1,0 +1,117 @@
+.product {
+    margin-top: 550px;
+    margin-bottom: 130px;
+}
+
+.product-title {
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.product-title div {
+    margin-right: 40px;
+    font-family: @main-font;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.product-title div:hover {
+    cursor: pointer;
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.product-category {
+    margin-top: 35px;
+}
+
+.product-information {
+    font-family: @main-font;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.product-price {
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.product-tools {
+    display: none;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.product-tools i {
+    margin-bottom: 16px;
+}
+
+.product-tools i {
+    border: 1px solid black;
+    display: inline;
+    font-size: 20px;
+    padding: 8px 5px 11px 12px;
+    color: gray;
+}
+
+.product-img img {
+    width: 120%;
+    margin-top: 16px;
+}
+
+.product-content:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: 0 0 1rem rgba(0,0,0,.15);
+    .product-tools {
+        display: flex;
+    }
+}
+
+.product-tools i:hover {
+    border: 1px solid red;
+    color: white;
+    background-color: #dd2f31;
+}
+
+.product-title div.active {
+    cursor: pointer;
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.product-tablet {
+    display: none;
+}
+
+// Tablet
+@media (max-width: 1023px ) and (min-width: 740px) {
+    .product {
+        margin-top: 350px;
+        margin-bottom: 60px;
+    }
+
+    .product-information {
+        font-size: 13px;
+    }
+
+    .product-tablet {
+        display: block;
+    }
+}
+
+//  Mobile
+
+@media (max-width: 739px) {
+    .product {
+        margin-top: 110px;
+        margin-bottom: 130px;
+    }
+
+    .product-title div {
+        font-size: 16px;
+    }
+}
+  
